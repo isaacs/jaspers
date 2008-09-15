@@ -8,7 +8,7 @@ int main (int argc, char** argv) {
 	int i;
 	
 	printf("Hello world, your arguments were: \n");
-	for (i = 0; argv[i] != 0; i ++) {
+	for (i = 0; i < argc; i ++) {
 		printf("%d: %s\n", i, argv[i]);
 	}
 	printf("Good bye, world!\n");
