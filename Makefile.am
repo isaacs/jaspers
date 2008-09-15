@@ -1,3 +1,2 @@
-bin_PROGRAMS = jaspers
-jaspers_SOURCES = src/jaspers.c
-AUTOMAKE_OPTIONS = foreign
+SUBDIRS = src
+dist_doc_DATA = README
