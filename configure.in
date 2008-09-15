@@ -1,0 +1,13 @@
+AC_INIT(src/jaspers.c)
+# Initializes the configure script. On start it will check for the
+# main source file specified here first.
+
+AM_INIT_AUTOMAKE(jaspers, 1.0)
+# Tells automake we have project named "hello" version 1.0
+
+AC_PROG_CC
+# Adds a check for C compiler
+
+AC_OUTPUT(Makefile)
+# The output file is Makefile. All the build stuff will be put there
+
