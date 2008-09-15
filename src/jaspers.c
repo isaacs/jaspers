@@ -7,7 +7,7 @@
 int main (int argc, char** argv) {
 	int i;
 	
-	printf("Hello world, from " PACKAGE_STRING ".  Your arguments were: \n");
+	printf("Hello world.  Your arguments were: \n");
 	for (i = 0; i < argc; i ++) {
 		printf("%d: %s\n", i, argv[i]);
 	}
