@@ -6,6 +6,7 @@
 
 int main (int argc, char** argv) {
 	int i;
+	FILE *input_file;
 	
 	printf("Hello world.  Your arguments were: \n");
 	for (i = 0; i < argc; i ++) {
