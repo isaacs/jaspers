@@ -6,7 +6,7 @@ src/jaspers.c
 """)
 object_list = env.Object(source = sources)
 
-jasper = env.Program(target='jasper', source=object_list)
+jasper = env.Program(target='jaspers', source=object_list)
 
-Default( jasper )
+Default( jaspers )
 
