@@ -1,5 +1,8 @@
 
-all: bin/hello_world
+all: bin/hello_world bin/shell
+
+bin/shell: v8/libv8.a
+	g++ -Iv8/include v8/samples/shell.cc -o bin/shell v8/libv8.a -lpthread
 
 bin/hello_world: v8/libv8.a
 	g++ -Iv8/include src/hello_world.cpp -o bin/hello_world v8/libv8.a -lpthread
