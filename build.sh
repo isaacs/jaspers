@@ -1,11 +1,9 @@
 #!/bin/sh
-cpp="$1"
-out=$cpp
-out=${out/\.cpp/}
+cc="$1"
+out=$cc
 out=${out/\.cc/}
 out=${out/src/bin}
-if [ $out == $cpp ]; then
-	cpp=${out/bin/src}.cpp
+if [ $out == $cc ]; then
+	cc=${out/bin/src}.cc
 fi
-g++ -Iv8/include $cpp -o $out v8/libv8.a -lpthread
-
+g++ -Iv8/include $cc -o $out v8/libv8.a -lpthread

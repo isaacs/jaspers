@@ -1,7 +1,10 @@
-JASPERS_PROGRAMS=bin/hello_world
+JASPERS_PROGRAMS=bin/hello_world bin/jaspers
 ALL=$(JASPERS_PROGRAMS) bin/shell v8/libv8.a
 
 all: $(ALL)
+
+clean:
+	rm bin/*
 
 v8/libv8.a: v8
 	cd v8 && scons
@@ -12,5 +15,5 @@ v8:
 bin/shell: v8/libv8.a
 	g++ -Iv8/include v8/samples/shell.cc -o bin/shell v8/libv8.a -lpthread
 
-$(JASPERS_PROGRAMS):
+$(JASPERS_PROGRAMS): v8/libv8.a
 	./build.sh $@
