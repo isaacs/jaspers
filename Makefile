@@ -4,7 +4,7 @@ ALL=$(JASPERS_PROGRAMS) bin/shell v8/libv8.a
 all: $(ALL)
 
 clean:
-	rm bin/*
+	@for i in `ls bin/* 2>/dev/null`; do rm $$i; done
 
 v8/libv8.a: v8
 	cd v8 && scons
