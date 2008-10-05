@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 cc="$1"
 out=$cc
 out=${out/\.cc/}
