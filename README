@@ -7,6 +7,6 @@ Using Google's v8 javascript parsing engine.
 
 INSTALLATION
 
-Run "make" in the project directory. This will compile all the binaries into the bin folder.
+Run "make clean && make" in the project directory. This will compile all the binaries into the bin folder.
 
-You must have scons, svn, and python installed in order to build the v8 library.
+You must have g++, scons, svn, and python installed in order to build the v8 library.
