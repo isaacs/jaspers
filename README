@@ -10,3 +10,6 @@ INSTALLATION
 Run "make clean && make" in the project directory. This will compile all the binaries into the bin folder.
 
 You must have g++, scons, svn, and python installed in order to build the v8 library.
+
+"You must be the change you want to see in the world."
+-Mahatma Gandhi
